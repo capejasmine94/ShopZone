@@ -8,12 +8,12 @@ public class AdminController {
 
     @GetMapping("/")
     public String adminLogin() {
-        return "adminLogin";
+        return "admin/adminLogin";
     }
 
     @GetMapping("/adminRegister")
     public String adminRegister() {
-        return "adminRegister";
+        return "admin/adminRegister";
     }
 
 }
