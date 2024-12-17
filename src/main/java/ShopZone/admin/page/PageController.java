@@ -1,12 +1,15 @@
-package ShopZone.admin.controller;
+package ShopZone.admin.page;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+
 
 @Controller
 @RequestMapping("admin")
-public class AdminController {
+public class PageController {
+
 
     @GetMapping("")
     public String adminLogin() {
@@ -21,6 +24,11 @@ public class AdminController {
     @GetMapping("adminRegisterComplete")
     public String adminRegisterComplete() {
         return "admin/adminRegisterComplete";
+    }
+
+    @PostMapping("adminHome")
+    public String adminHome() {
+        return "admin/adminHome";
     }
 
 }
